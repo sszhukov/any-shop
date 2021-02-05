@@ -1,0 +1,32 @@
+$basic-black: #1F1F1F;
+$basic-gray: #959DAD;
+$box-shadow-color: rgb(0 0 0 / 5%);
+
+@mixin buttonInCart {
+  width: 100%;
+  height: 50px;
+  background: #1F1F1F;
+  border: none;
+  border-radius: 8px;
+  color: white;
+
+  @media screen and (max-width: 600px) {
+    position: fixed;
+    width: 90%;
+    bottom: 1em;
+    left: calc((100% - 90%) / 2);
+  }
+}
+
+@mixin baseContentSize {
+  margin: 0 auto;
+  padding: 0 88px;
+  max-width: 1440px;
+}
+
+@mixin icon-mask {
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  cursor: pointer;
+}
