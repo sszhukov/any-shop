@@ -1,0 +1,17 @@
+.page-enter {
+  opacity: 0;
+  transform: scale3d(2, 1.1, 1) translate3d(400px, 0, 0);
+}
+.page-enter-to {
+  transform: scale3d(1, 1, 1);
+}
+.page-enter-active, .page-leave-active {
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.page-leave {
+  transform: scale3d(1, 1, 1);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: scale3d(2, 0.9, 1) translate3d(400px, 0, 0);
+}
