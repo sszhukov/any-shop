@@ -45,7 +45,6 @@
 import { mapMutations, mapActions, mapGetters } from 'vuex'
 
 export default {
-  transition: 'slide-right',
   data () {
     return {
       orderingSuccess: false
