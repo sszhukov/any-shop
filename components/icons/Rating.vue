@@ -22,6 +22,7 @@ export default {
   .rating {
     display: flex;
     align-items: center;
+    width: 14px;
 
     .points {
       margin-left: 20%;

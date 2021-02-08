@@ -12,12 +12,7 @@
           {{ cartItem.product.price | numberFormat }} ₽
         </div>
       </div>
-      <div :class="$style.rating">
-        <img src="@/assets/rating-star.svg" alt="" :class="$style.ratingImage">
-        <div :class="$style.points">
-          {{ cartItem.product.rating }}
-        </div>
-      </div>
+      <Rating :class="$style.rating" />
     </div>
     <Trash :class="$style.trash" @click.native="deleteProduct(cartItem.product.id)" />
   </div>
@@ -89,16 +84,7 @@ export default {
 
       .rating {
         display: flex;
-        align-items: center;
-        height: 14px;
         margin-top: auto;
-
-        .points {
-          margin-left: 5px;
-          font-size: 12px;
-          font-weight: 700;
-          color: #F2C94C;
-        }
       }
     }
 

@@ -94,7 +94,6 @@ export default {
       position: absolute;
       top: 16px;
       left: 16px;
-      height: 14px;
     }
 
     .cartImage {
