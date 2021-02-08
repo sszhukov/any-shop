@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
-    <LeftSidebar :categories="categories || []" />
-    <NuxtChild />
+    <LeftSidebar :class="$style.sidebar" :categories="categories || []" />
+    <NuxtChild :class="$style.mainContent" />
   </div>
 </template>
 
@@ -36,6 +36,13 @@ export default {
     margin-top: 66px;
     max-width: 1440px;
     padding: 32px 88px 66px 88px;
+
+    .sidebar {
+      position: fixed;
+    }
+    .mainContent {
+      margin-left: $width-sidebar;
+    }
 
     @media screen and (max-width: 600px) {
       flex-direction: column;

@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" module>
   .sidebar {
-    width: 160px;
+    width: $width-sidebar;
     flex-grow: 0;
     flex-shrink: 0;
     align-self: flex-start;
