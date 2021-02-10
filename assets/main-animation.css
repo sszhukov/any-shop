@@ -15,3 +15,17 @@
   opacity: 0;
   transform: scale3d(2, 0.9, 1) translate3d(400px, 0, 0);
 }
+
+.dissolution-enter, .dissolution-leave-to {
+  opacity: 0;
+}
+.dissolution-enter-active, .dissolution-leave-active {
+  transition: .5s;
+}
+
+.slide-right-enter, .slide-right-leave-to {
+  transform: translateX(460px);
+}
+.slide-right-enter-active, .slide-right-leave-active {
+  transition: .5s;
+}

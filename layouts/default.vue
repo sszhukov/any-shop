@@ -1,8 +1,8 @@
 <template>
   <div :class="[$style.loyaut, showCart ? $style.loyautOverlay : '']">
-    <CartModal />
     <Header />
     <Nuxt />
+    <CartModal />
   </div>
 </template>
 
