@@ -37,11 +37,13 @@ export default {
     max-width: 1440px;
     padding: 32px 88px 66px 88px;
 
-    .sidebar {
-      position: fixed;
-    }
-    .mainContent {
-      margin-left: $width-sidebar;
+    @media screen and (min-width: 600px) {
+      .sidebar {
+        position: fixed;
+      }
+      .mainContent {
+        margin-left: $width-sidebar;
+      }
     }
 
     @media screen and (max-width: 600px) {
